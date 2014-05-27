@@ -189,7 +189,15 @@ snip.rv = (snip.basename or 'unnamed') + '_submit'
 endsnippet
 
 snippet h1 "XHTML <h1>" w
-<h1 id="${1/[\w\d]+|( )/(?1:_:\L$0\E)/g}">${1}</h1>
+<h1>${1}</h1>
+endsnippet
+
+snippet h2 "XHTML <h2>" w
+<h2>${1}</h2>
+endsnippet
+
+snippet h3 "XHTML <h3>" w
+<h3>${1}</h3>
 endsnippet
 
 snippet head "XHTML <head>"
@@ -232,7 +240,7 @@ snippet table "XHTML <table>" w
 endsnippet
 
 snippet a "Link" w
-<a href="${1:http://www.${2:url.com}}"${3: target="_blank"}>${4:Anchor Text}</a>
+<a href="${1:http://www.${2:url.com}}">${4:Anchor Text}</a>
 endsnippet
 
 snippet p "paragraph" w
@@ -287,7 +295,7 @@ snippet html5 "HTML5 Template"
 <html>
 <head>
 	<title>${1}</title>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 </head>
 <body>
 	<header>
